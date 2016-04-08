@@ -1,6 +1,12 @@
-﻿body{
-    font-family: "Helvetica";
+﻿@font-face{
+    font-family: Arizonia;
+    src:url('fonts/Arizonia-Regular.ttf');
 }
+body{
+    font-family: Arizonia;
+    background-image: url("Images/welcome.png");
+}
+
 div.navButton{
     background-color: #f4ebeb;
     opacity: 0.8;
@@ -13,12 +19,20 @@ div.navButton{
 h1,h2 {
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Arizonia';
 }
 li{
     text-decoration: none;
     display: inline;
 }
-/*Class*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 100px;
+}
+/*Classes*/
 a.btn{ 
     display: inline;	
     border-style: solid;
@@ -27,15 +41,20 @@ a.btn{
     color: black;
     border-radius: 0px;
 }
-/*Class*/
+
 div.container{
     background-color: #ededed; /*light grey*/
-    font-family: "Times New Roman";
+    font-family: Arizonia;
     border: 2px solid black;
     text-align: center;
 
 }
 div.jumbotron{
-    background-color: #ffffff; /*White*/
+    background-color: rgba(0, 0, 0, 0.00);
+    opacity: 0.1;
 }
 
+/*Id's*/
+#welcome{
+    background-image: url("Images/welcome.png");
+}
