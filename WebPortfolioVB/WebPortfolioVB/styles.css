@@ -1,60 +1,156 @@
 ﻿@font-face{
-    font-family: Arizonia;
-    src:url('fonts/Arizonia-Regular.ttf');
+    font-family: Lobster;
+    src:url('fonts/Lobster/lobster_1.3-webfont.eot');
+    src:url('fonts/Lobster/lobeter_1.3-webfont.eot') format('embedded-opentype'),
+        url('fonts/Lobster/lobster_1.3-webfont.woff') format('woff'),
+        url('fonts/Lobster/lobster_1.3-webfont.ttf') format('truetype'),
+        url('fonts/Lobster/lobster_1.3-webfont.svg') format('svg');
 }
-body{
-    font-family: Arizonia;
-    background-image: url("Images/welcome.png");
+@font-face{ /*used for paragraphs/writing*/
+    font-family: Ecodesans; /*font is from font squrriel*/
+    src:url('fonts/fonts/encodesans-regular-webfont.eot');
+    src:url('fonts/fonts/encodesans-regular-webfont.eot') format('embedded-opentype'),
+        url('fonts/fonts/encodesans-regular-webfont.woff') format('woff'),
+        url('fonts/fonts/encodesans-regular-webfont.ttf') format('truetype'),
+        url('fonts/fonts/encodesans-regular-webfont.svg') format('svg');
 }
+body {
+    font-family: Arizonia; 
+    background: url('images/welcome.png') no-repeat center center fixed;
+        -webkit-background-size: cover; /*Used by Safari & Chrome*/
+        -moz-background-size: cover; /* Used by Firefox */
+        -o-background-size: cover; /* Used by Opera */
+        background-size: cover; /* All Modern Browsers */
+}
+/*img.bg {*/
+  /* Set rules to fill background */
+  /*min-height: 100%;
+  min-width: 1024px;*/
+	
+  /* Set up proportionate scaling */
+  /*width: 100%;
+  height: auto;*/
+	
+  /* Set up positioning */
+  /*position: fixed;
+  top: 0;
+  left: 0;
+}*/
 
-div.navButton{
-    background-color: #f4ebeb;
-    opacity: 0.8;
-    position: relative;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    max-width: 500px;
-    margin: auto;
-}
-h1,h2 {
+/*@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  /*img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  /*}*/
+/*}*/
+h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Arizonia';
+    /*text-transform: uppercase;*/
+    color: #ffffff;
 }
-li{
-    text-decoration: none;
-    display: inline;
+p{
+    font-family: 'Ecodesans', sans-serif;
+    color: #ffffff;
+}
+ul, ol{
+    list-style-type: none;
+    color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+li{ 
+     display: block;
+     /*margin: 50px;*/
+     text-decoration: none;
+     text-align: center;   
+}
+li a{
+    display: block;
+    font-family: 'Ecodesans', sans-serif;
+    text-transform: uppercase;
+}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+li a:hover, a:active, a:focus {
+	text-decoration: none;
+    color:#fff;
+	background-color: #000;
+}
+table{
+    border-collapse: collapse; /*responsive table*/
+    color: #ffffff;
 }
 table, th, td {
+    font-family: 'Ecodesans', sans-serif;
     border: 1px solid black;
-    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
 }
 th, td {
-    padding: 100px;
+    padding: 300px;
+    color: #ffffff;
 }
+
 /*Classes*/
-a.btn{ 
-    display: inline;	
-    border-style: solid;
-    border-color: #000;
-    padding: 20px;
-    color: black;
-    border-radius: 0px;
+ul.navigation{
+    /*opacity: 0.8;*/
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    padding-bottom: 1px;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
-
-div.container{
-    background-color: #ededed; /*light grey*/
-    font-family: Arizonia;
-    border: 2px solid black;
+.page-title {
+    font-family: Lobster;
+    display:block;
+    margin: 50px;
+    position: fixed;
+    color: #ffffff;
+}
+.header {
+    display: block;
+    position: fixed;
+    background-color: #000;
+    height: 100%;
+    width: 270px;
+}
+.section-heading{
+    /*text-transform: uppercase;*/
+    font-family: 'Lobster', sans-serif;
     text-align: center;
-
+    color: #ffffff;
 }
+a.btn{ 
+    display: block;
+    padding: 15px;
+    margin: 15px;	
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #000;
+}
+
+div.main{
+    text-align: center;
+}
+
 div.jumbotron{
     background-color: rgba(0, 0, 0, 0.00);
-    opacity: 0.1;
+    /*opacity: 0.1;*/
 }
-
+.footer{
+    text-align:center;
+}
 /*Id's*/
 #welcome{
-    background-image: url("Images/welcome.png");
 }

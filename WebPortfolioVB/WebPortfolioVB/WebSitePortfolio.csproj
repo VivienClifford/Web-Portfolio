@@ -68,11 +68,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fonts\encodesans-regular-webfont.svg" />
+    <Content Include="Fonts\Lobster\lobster_1.3-webfont.svg" />
     <Content Include="Fonts\OFL.txt" />
     <Content Include="Images\welcome.png" />
     <Content Include="packages.config" />
     <Content Include="Fonts\Arizonia-Regular.ttf" />
     <Content Include="Fonts\Arizonia-Regular.woff" />
+    <Content Include="Fonts\encodesans-regular-webfont.eot" />
+    <Content Include="Fonts\encodesans-regular-webfont.ttf" />
+    <Content Include="Fonts\encodesans-regular-webfont.woff" />
+    <Content Include="Fonts\encodesans-regular-webfont.woff2" />
+    <Content Include="Fonts\Lobster\lobster_1.3-webfont.eot" />
+    <Content Include="Fonts\Lobster\lobster_1.3-webfont.ttf" />
+    <Content Include="Fonts\Lobster\lobster_1.3-webfont.woff" />
+    <Content Include="Fonts\Lobster\lobster_1.3-webfont.woff2" />
+    <Content Include="Fonts\Lobster\Lobster_1.3.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
